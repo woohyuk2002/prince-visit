@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LA of La La Land</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1><a href="index.html">Los Angeles in La La Land</a></h1>
+    <div id="grid">
+      <script src = "sites.js"></script>
+      <ul>
+      <script src = "fetchfuction.js"></script>
+      <script>
+        i = 0
+        while(i<sites.length){
+          document.write('<li>'+'<a onclick="fetchPage("'+sites[i]+'")>'+sites[i]+'</li>');
+          i = i + 1;
+        }
+      </script>
+      </ul>
+      <div id="article">
+          <p>
+            <img src="lalaland.jpg" width="100%">
+          </p>
+          <p>
+            La La Land is a 2016 American musical romantic comedy drama film written and directed by Damien Chazelle. It stars Ryan Gosling as a jazz pianist and Emma Stone as an aspiring actress, who meet and fall in love in Los Angeles while pursuing their dreams.
+          </p>
+      </div>
+    </div>
+    <script src="dayNightHandler.js"></script>
+    <input type="button" value="day" onclick="
+      dayNightHandler(this);
+    ">
+  </body>
+</html>
